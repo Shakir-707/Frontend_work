@@ -1,0 +1,488 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    background-color: #f2f2f2 !important;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*-- # Sidebar--*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background-color: #fff;
+}
+
+.sidebar nav .nav-item .nav-link {
+    color: #1C4980;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px
+}
+
+.sidebar nav .nav-item .nav-link.active {
+    color: #0073E6;
+    background-color: #E5F1FC;
+    border-radius: 8px;
+    border: 1px solid #0073E6;
+}
+
+.sidebar nav .nav-item .nav-link span {
+    display: block;
+}
+
+.admin-badge {
+    background-color: #FBEBEA;
+    color: #D63500;
+    border: 1px solid #D63500;
+    font-size: 10px;
+    font-weight: 500;
+    width: 50px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.offcanvas-title {
+    color: #1C4980;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-bottom: 0 !important;
+}
+
+.offcanvas.offcanvas-start {
+    max-width: 70% !important;
+}
+
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -300px;
+    }
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+.d-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 1200px) {
+
+    .main {
+        margin-left: 160px;
+    }
+}
+
+.slide-container {
+    display: none;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mob-text {
+    display: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .mob-text {
+        display: block;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #1C4980;
+        margin-bottom: 0 !important;
+    }
+
+    .modal-body .skill-set .skill-chip {
+        margin-bottom: 10px;
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    .modal-body .skill-set .skill-chip img {
+        height: 10px;
+    }
+
+    .assessment-dialog .modal-content .modal-body {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .assessment-dialog .modal-content .modal-header {
+        padding: 20px 10px 10px 10px;
+    }
+
+    .assessment-dialog .modal-content .modal-footer {
+        padding: 10px;
+    }
+
+    .main .navbar.navbar-expand-lg {
+        justify-content: flex-start !important;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background-color: #fff;
+    }
+
+    .mat-mdc-tab-header {
+        position: fixed !important;
+        top: 51px;
+        z-index: 100;
+        width: 100%;
+        background-color: #fff !important;
+    }
+
+    .mat-mdc-tab-body-wrapper {
+        margin-top: 108px !important;
+    }
+
+    .main {
+        margin-right: 0 !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination {
+        display: none !important;
+    }
+
+    .main .pagewrap .inner-wrap {
+        padding: 20px 25px;
+    }
+
+    .inner-wrap .round-b2 {
+        border-bottom-left-radius: 0;
+    }
+
+    .inner-wrap .round-b1 {
+        border-bottom-right-radius: 0;
+    }
+
+    .inner-wrap .order-3 {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .mat-mdc-tab-body-content {
+        height: 100%;
+        overflow: hidden !important;
+    }
+
+    .my-assessment {
+        padding: 20px 15px !important;
+    }
+
+    .sidebar nav .nav-item .nav-link span {
+        display: inline;
+    }
+
+    .sidebar nav .nav-item .nav-link {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .d-nav {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .admin-badge {
+        margin: 14px auto;
+    }
+}
+
+.mat-mdc-tab-header {
+    border-bottom: 1px solid #DDE5EA;
+}
+
+.pagewrap .mat-mdc-tab.mdc-tab {
+    flex-grow: 0 !important;
+}
+
+.inner-wrap {
+    padding: 20px 30px;
+}
+
+.round-t1 {
+    border-top-left-radius: 0.5rem;
+}
+
+.round-t2 {
+    border-top-right-radius: 0.5rem;
+}
+
+.round-b1 {
+    border-bottom-right-radius: 0.5rem;
+}
+
+.round-b2 {
+    border-bottom-left-radius: 0.5rem;
+}
+
+.info-card h6 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #1C4980;
+    margin-bottom: 0;
+}
+
+.info-card h6 span {
+    font-size: 12px;
+    color: #05C165;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.info-card p {
+    color: #1C4980;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.card-bg {
+    background-color: #F6F8FA;
+}
+
+.info-card h4 {
+    font-weight: 600;
+    color: #1C4980;
+    font-size: 14px;
+
+}
+
+.my-assessment {
+    padding: 20px 30px;
+}
+
+.modal-content .modal-header {
+    border-bottom: 1px solid #DADCE0;
+    padding: 20px 24px 10px 24px;
+}
+
+.modal-content .modal-header h5 {
+    color: #1C4980;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.modal-content .modal-body {
+    padding: 20px 24px 10px 24px;
+    height: 75vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.modal-content .modal-body .form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1C4980;
+}
+
+.modal-content .modal-body ::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1C4980;
+}
+
+.modal-content .modal-body .form-select {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1C4980;
+}
+
+.modal-content .modal-footer {
+    padding: 10px 24px 10px 24px;
+}
+
+.skill-set .skill-chip {
+    background-color: #DDEDFF;
+    padding: 9px 8px 9px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1C4980;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.border-dashed-bottom {
+    border-bottom: 0.12rem dashed #DADCE0;
+}
+
+.share-chip {
+    border-color: #1C4980;
+    color: #1C4980;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px 6px 11px;
+    border: 1px solid;
+    margin-right: 10px;
+}
+
+.share-name {
+    background-color: #6548EE;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.share-name1 {
+    background-color: #3079E1;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    border: 1px solid #fff;
+    margin-left: -16px;
+}
+
+.share-name2 {
+    background-color: #E9407A;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    border: 1px solid #fff;
+    margin-left: -16px;
+}
+
+.footer-text h5 {
+    margin-bottom: 0;
+    color: #1C4980;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer-text h6 {
+    margin-bottom: 0;
+    color: #1C4980;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-text h3 {
+    color: #1C4980;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-text h4 {
+    color: #1C4980;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-text span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.radius-3 {
+    border-radius: 12px !important;
+}
+
+.card-upload {
+    border: 0.12rem dashed #DADCE0;
+}
+
+.card-upload h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1C4980;
+}
+
+.card-upload p {
+    color: #1C4980;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.my-assessment .heading-text {
+    margin-bottom: 20px;
+}
+
+.my-assessment .heading-text h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1C4980;
+    margin-bottom: 0;
+}
+
+.inner-wrap h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1C4980;
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1C4980 !important;
+}
+
+.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: #0073E6 !important;
+}
+
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+    border-color: #0073E6 !important;
+}
+
+.main {
+    margin-top: 0;
+    transition: all 0.3s;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1199px) {
+    .main {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,64 @@
+<div class="assessment-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Create new assessment</h5>
+            <button type="button" class="btn-close" (click)="close()"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="Nameofassessment" class="form-label">Name of assessment</label>
+                    <input type="text" class="form-control" placeholder="Type Here">
+                </div>
+                <div class="mb-3">
+                    <label for="Purposeofthetestis" class="form-label">Purpose of the test is</label>
+                    <select class="form-select mb-3">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Description" class="form-label">Description</label>
+                    <select class="form-select mb-3">
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Skills" class="form-label">Skills</label>
+                    <div class="border skill-set round-t1 round-t2 round-b1 round-b2">
+                        <div class="p-3">
+                            <span class="badge rounded-pill skill-chip">UI/UX and Design
+                                <img src="assets/images/cross.svg" class="" alt="..">
+                            </span>
+                            <span class="badge rounded-pill skill-chip">No of Question
+                                <img src="assets/images/cross.svg" class="" alt="..">
+                            </span>
+                            <span class="badge rounded-pill skill-chip">Web Development
+                                <img src="assets/images/cross.svg" class="" alt="..">
+                            </span>
+                            <span class="badge rounded-pill skill-chip">UI/UX and Design
+                                <img src="assets/images/cross.svg" class="" alt="..">
+                            </span>
+                            <span class="badge rounded-pill skill-chip">Web Development
+                                <img src="assets/images/cross.svg" class="" alt="..">
+                            </span>
+                        </div>
+                        <input type="text" class="form-control rounded-0 rounded-bottom" placeholder="Type Here">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="Nameofassessment" class="form-label">Duration of assessment</label>
+                    <input type="time" class="form-control" placeholder="HH:MM:SS">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary w-100">Save</button>
+        </div>
+    </div>
+</div>

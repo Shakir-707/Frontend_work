@@ -1,0 +1,213 @@
+<main class="main">
+    <div class="navbar navbar-expand-lg">
+        <button class="btn navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+            aria-controls="sidebar">
+            <img src="assets/images/segment.svg" alt="..">
+        </button>
+        <h3 class="mob-text">Assessment</h3>
+    </div>
+    <div class="pagewrap">
+        <mat-tab-group [selectedIndex]="activeTabIndex">
+            <mat-tab label="Assessment">
+            </mat-tab>
+            <mat-tab label="My Assessment">
+                <!-- Assessment Overview section -->
+                <div class="inner-wrap" [class.slide-container]="isHidden">
+                    <h1>Assessment Overview</h1>
+                    <div class="row">
+                        <div class="col-md-2 col-6 p-3 border round-t1 round-b2 order-1 order-md-1">
+                            <div class="info-card">
+                                <h4>Total Assessment</h4>
+                                <div class="d-flex align-items-center">
+                                    <div class="align-items-center justify-content-center">
+                                        <img src="assets/images/assessment.svg" alt="..">
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>34</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 p-3 border order-2 order-md-2">
+                            <div class="info-card">
+                                <h4>Candidates</h4>
+                                <div class="d-flex align-items-center">
+                                    <div class="align-items-center justify-content-center">
+                                        <img src="assets/images/users.svg" alt="..">
+                                    </div>
+                                    <div class="ps-3 border-end pe-3">
+                                        <h6>11,145 <span>+89</span></h6>
+                                        <p>Total Candidate</p>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>114 <span>+89</span></h6>
+                                        <p>Who Attampled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12 p-3 border order-3 order-md-3">
+                            <div class="info-card">
+                                <h4>Candidates Source</h4>
+                                <div class="d-flex align-items-center">
+                                    <div class="align-items-center justify-content-center">
+                                        <img src="assets/images/source.svg" alt="..">
+                                    </div>
+                                    <div class="ps-3 border-end pe-3">
+                                        <h6>11,000 <span>+89</span></h6>
+                                        <p>E-mail</p>
+                                    </div>
+                                    <div class="ps-3 border-end pe-3">
+                                        <h6>145 <span>+89</span></h6>
+                                        <p>Social Share</p>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>145 <span>+89</span></h6>
+                                        <p>Unique Link</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 p-3 col-6 border round-t2 round-b1 order-1 order-md-4">
+                            <div class="info-card">
+                                <h4>Total Purpose</h4>
+                                <div class="d-flex align-items-center">
+                                    <div class="align-items-center justify-content-center">
+                                        <img src="assets/images/purpose.svg" alt="..">
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>11</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- My Assessment section card -->
+                <div class="my-assessment">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-text d-flex justify-content-between align-items-center">
+                                <h2>My Assessment</h2>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-mob" (click)="toggleDiv()">
+                                        <img src="assets/images/search.svg" alt="..">
+                                    </button>
+                                    <button class="btn btn-mob" (click)="toggleDiv()">
+                                        <img src="assets/images/filter.svg" alt="..">
+                                    </button>
+                                    <button class="btn btn-mob" (click)="toggleDiv()">
+                                        <img src="assets/images/bar_chart.svg" alt="..">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card radius-3 h-100">
+                                <div class="card-body text-center card-bg card-upload radius-3">
+                                    <button type="button" class="btn" (click)="openDialog()"><img
+                                            src="assets/images/add-button.svg" alt=""></button>
+                                    <h5>New Assessment</h5>
+                                    <p>From here you can add questions of multiple types like MCQs, subjective (text or
+                                        paragraph)!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card radius-3 h-100">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <img src="assets/images/suitcase.svg" alt="..">
+                                        <button type="button" class="btn"><mat-icon>more_vert</mat-icon></button>
+                                    </div>
+                                    <div class="card-text pb-3 mb-2 border-dashed-bottom">
+                                        <h3 class="mb-0">Math Assessment</h3>
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="mb-0">Job</h4>
+                                            <div class="border-start border-2 ps-2 ms-2">
+                                                <img src="assets/images/calendar_today.svg" alt="..">
+                                                <span class="text-muted ps-2">20 Apr 2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="footer-text d-flex">
+                                            <div class="me-2">
+                                                <h5>00</h5>
+                                                <h6>Duration</h6>
+                                            </div>
+                                            <div>
+                                                <h5>00</h5>
+                                                <h6>Questions</h6>
+                                            </div>
+                                        </div>
+                                        <div class="link-share d-flex align-items-center">
+                                            <div>
+                                                <span class="rounded-pill share-chip">
+                                                    <img src="assets/images/link.svg" alt="..">
+                                                    Share
+                                                </span>
+                                            </div>
+                                            <div class="rounded-circle share-name">
+                                                <span>LP</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card radius-3 h-100">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <img src="assets/images/suitcase.svg" alt="..">
+                                        <button type="button" class="btn"><mat-icon>more_vert</mat-icon></button>
+                                    </div>
+                                    <div class="card-text pb-3 mb-2 border-dashed-bottom">
+                                        <h3 class="mb-0">Math Assessment</h3>
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="mb-0">Job</h4>
+                                            <div class="border-start border-2 ps-2 ms-2">
+                                                <img src="assets/images/calendar_today.svg" alt="..">
+                                                <span class="text-muted ps-2">20 Apr 2023</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="footer-text d-flex">
+                                            <div class="me-2">
+                                                <h5>00</h5>
+                                                <h6>Duration</h6>
+                                            </div>
+                                            <div>
+                                                <h5>00</h5>
+                                                <h6>Questions</h6>
+                                            </div>
+                                        </div>
+                                        <div class="link-share d-flex align-items-center">
+                                            <div>
+                                                <span class="rounded-pill share-chip">
+                                                    <img src="assets/images/link.svg" alt="..">
+                                                    Share
+                                                </span>
+                                            </div>
+                                            <div class="rounded-circle share-name">
+                                                <span>LP</span>
+                                            </div>
+                                            <div class="rounded-circle share-name1">
+                                                <span>LP</span>
+                                            </div>
+                                            <div class="rounded-circle share-name2">
+                                                <span>LP</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</main>
